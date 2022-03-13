@@ -1,7 +1,10 @@
 <template>
-  <div>
+  <div class="home-page">
     <HeaderWarp />
-    首页</div>
+    <div class="content">
+      <router-view></router-view>
+    </div>
+    </div>
 </template>
 
 <script>
@@ -15,5 +18,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.home-page {
+  .content {
+    background: #f2f2f2;
+    width: 100vw;
+    min-height: calc(100vh - 120px);
+  }
+}
 </style>

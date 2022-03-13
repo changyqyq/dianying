@@ -4,7 +4,7 @@
         <a href="javascript:;">中牟</a>
         <search-bar :placeholder="hotWord" to="/search" />
     </header>
-    <tab-bar :tabs="tabs" />
+    <tab-bar :tabs="tabs" router />
 </div>
 </template>
 
@@ -20,22 +20,28 @@ export default {
       ],
       tabs: [
         {
-          text: '推荐'
+          text: '推荐',
+          key: '/home/first'
         },
         {
-          text: '热片解读'
+          text: '热片解读',
+          key: '/home/second'
         },
         {
-          text: '预告片'
+          text: '预告片',
+          key: '/home/third'
         },
         {
-          text: '说电影'
+          text: '说电影',
+          key: '/home/fouth'
         },
         {
-          text: '佳片'
+          text: '佳片',
+          key: '/home/fifth'
         },
         {
-          text: '剧综'
+          text: '剧综',
+          key: '/home/sixth'
         }
       ]
     }

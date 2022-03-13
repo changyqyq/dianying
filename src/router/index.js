@@ -13,7 +13,34 @@ const routes = [
       {
         path: '/home',
         name: 'home',
-        component: () => import('@/views/home')
+        component: () => import('@/views/home'),
+        redirect: '/home/first',
+        children: [
+          {
+            path: '/home/first',
+            component: () => import('@/views/home/children/first/index')
+          },
+          {
+            path: '/home/second',
+            component: () => import('@/views/home/children/second')
+          },
+          {
+            path: '/home/fouth',
+            component: () => import('@/views/home/children/fouth')
+          },
+          {
+            path: '/home/fifth',
+            component: () => import('@/views/home/children/fifth')
+          },
+          {
+            path: '/home/third',
+            component: () => import('@/views/home/children/third')
+          },
+          {
+            path: '/home/sixth',
+            component: () => import('@/views/home/children/sixth')
+          }
+        ]
       },
       {
         path: '/seetv',
