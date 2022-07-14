@@ -19,6 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .home-page {
+  width: 100%;
   .content {
     background: #f2f2f2;
     width: 100vw;
